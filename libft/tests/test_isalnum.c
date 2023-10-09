@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_isalpha.c                                     :+:      :+:    :+:   */
+/*   test_isalnum.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 02:55:48 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/10 00:51:03 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/10 00:40:44 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 #include "../includes/libft.h"
 
-#define TEST_FUNCTION ft_isalpha(c)
-#define ORIGINAL_FUNCTION isalpha(c)
+#define ORIGINAL_FUNCTION isalnum(c)
+#define TEST_FUNCTION ft_isalnum(c)
 
 char random_char(int min, int max)
 {
