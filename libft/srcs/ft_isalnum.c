@@ -6,11 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 10:03:18 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/04 10:03:18 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/10 00:23:13 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h";
+#include "../includes/libft.h"
 
 int ft_isalnum(int c)
 {
