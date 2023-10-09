@@ -8,19 +8,16 @@ SRCS_DIR = srcs
 OBJS_DIR = objs
 TESTS_DIR = tests
 
-SRCS = ft_isalpha.c ft_isdigit.c ft_isascii.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isascii.c ft_isalnum.c
 SRCS_OBJS = $(SRCS:.c=.o)
 
 TEST_SRCS = $(wildcard $(TESTS_DIR)/*.c)
 TEST_EXECS = $(patsubst $(TESTS_DIR)/%.c,$(BINS_DIR)/%,$(TEST_SRCS))
 
-debug:
-	@echo $(TEST_EXECS)
-
 all: $(NAME)
 
 tests: $(TEST_EXECS)
-	$(addprefix .$(BIN_DIR)/,$(TEST_EXECS))
+	$(addsuffix ;,$(addprefix .$(BIN_DIR)/,$(TEST_EXECS)))
 
 $(NAME): $(SRCS_OBJS) | $(BINS_DIR)
 	ar rcs $(BINS_DIR)/$@ $(addprefix $(OBJS_DIR)/,$(SRCS_OBJS))
