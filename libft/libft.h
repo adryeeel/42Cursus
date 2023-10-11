@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 09:56:04 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/11 14:48:30 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:03:44 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,19 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-int		ft_atoi(const char *nptr);
+
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *str);
-void	ft_bzero(void *s, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-void	*ft_calloc(size_t nmemb, size_t size);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+
+int		ft_atoi(const char *nptr);
+void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t nmemb, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif
