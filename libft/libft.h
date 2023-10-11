@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 09:56:04 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/11 11:20:28 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/11 11:25:14 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,6 @@ void	ft_bzero(void *s, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+
 #endif
