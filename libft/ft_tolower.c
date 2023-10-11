@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 09:56:04 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/10 00:19:24 by arocha-b         ###   ########.fr       */
+/*   Created: 2023/10/06 02:50:22 by arocha-b          #+#    #+#             */
+/*   Updated: 2023/10/10 12:28:12 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+static int	ft_isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	return (0);
+}
 
-typedef unsigned long size_t;
-
-int ft_isalpha(int c);
-int ft_isalnum(int c);
-int ft_isdigit(int c);
-
-size_t ft_strlen(const char *s);
-
-#endif
+int	ft_tolower(int c)
+{
+	if (ft_isupper(c))
+		return (c += 32);
+	return (c);
+}

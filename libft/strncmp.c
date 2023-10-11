@@ -1,20 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   strncmp.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 10:10:47 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/04 10:10:47 by arocha-b         ###   ########.fr       */
+/*   Created: 2023/10/10 19:04:46 by arocha-b          #+#    #+#             */
+/*   Updated: 2023/10/10 19:40:19 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// TODO: Compare with original function
+#include <stdlib.h>
 
-int ft_isprint(int c)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	if (c >= 32 && c <= 127)
-		return (1);
-	return (0);
+	while (n > 0 && *s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+		n--;
+	}
+	if (n == 0)
+		return (0);
+	
+	// if (*s1 < 0)
+	// 	*s1 += 255;
+
+	// if (*s2 < 0)
+	// 	*s2 += 255;
+
+	return (*s1 - *s2);
 }

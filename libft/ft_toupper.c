@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 09:59:12 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/06 11:30:55 by arocha-b         ###   ########.fr       */
+/*   Created: 2023/10/06 02:47:44 by arocha-b          #+#    #+#             */
+/*   Updated: 2023/10/10 12:28:08 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+static int	ft_islower(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1024);
+	if (c >= 'a' && c <= 'z')
+		return (1);
 	return (0);
+}
+
+int	ft_toupper(int c)
+{
+	if (ft_islower(c))
+		return (c -= 32);
+	return (c);
 }

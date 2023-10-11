@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 10:36:53 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/04 10:36:53 by arocha-b         ###   ########.fr       */
+/*   Created: 2023/10/04 10:16:25 by arocha-b          #+#    #+#             */
+/*   Updated: 2023/10/10 11:48:40 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-// TODO: Compare with original function
-
-void ft_bzero(void *s, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char *o_s;
+	unsigned char	*o_s;
 
 	o_s = s;
 	while (n-- > 0)
-		*o_s++ = '\0';
-
+		*o_s++ = c;
 	return (s);
 }
