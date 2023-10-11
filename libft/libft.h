@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 09:56:04 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/11 11:06:53 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/11 11:20:28 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 void	*ft_memcpy(void *dest, const char *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int		ft_tolower(int c);
 int		ft_toupper(int c);
