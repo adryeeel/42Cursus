@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 12:13:02 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/12 15:20:16 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/12 16:30:20 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #define NULL_CHAR 1
 
-int	ft_contains(const char *to_search, const char to_found)
+static int	ft_contains(const char *to_search, const char to_found)
 {
 	while (*to_search)
 		if (*to_search++ == to_found)
