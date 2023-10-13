@@ -13,17 +13,15 @@
 #include "libft.h"
 #include <stdlib.h>
 
-static size_t ft_count_digits(long num)
+static size_t	ft_count_digits(long num)
 {
-	size_t digits_amount;
+	size_t	digits_amount;
 
 	digits_amount = 0;
-
 	if (num < 0)
 		num = -num;
 	if (num < 10)
 		return (1);
-
 	while (num)
 	{
 		num /= 10;
@@ -32,24 +30,22 @@ static size_t ft_count_digits(long num)
 	return (digits_amount);
 }
 
-static void ft_assign(char *str, long num, size_t len)
+static void	ft_assign(char *str, long num, size_t len)
 {
 	if (num == 0)
-    {
+	{
 		*str++ = '0';
 		*str = '\0';
-		return;
-    }
+		return ;
+	}
 	if (num < 0)
 	{
 		len--;
 		num = -num;
 		*str++ = '-';
 	}
-
 	str += len;
 	*str-- = '\0';
-
 	while (num)
 	{
 		*str-- = num % 10 + '0';
@@ -57,25 +53,20 @@ static void ft_assign(char *str, long num, size_t len)
 	}
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	long num;
-	char *str;
-	size_t str_len;
+	long	num;
+	char	*str;
+	size_t	str_len;
 
 	num = (long)n;
 	str_len = ft_count_digits(num);
-
 	if (num < 0)
 		str_len++;
-
 	str = (char *)malloc((str_len + NULL_CHAR) * sizeof(char));
 	if (!str)
 		return (NULL);
-
 	*str = '\0';
-
 	ft_assign(str, num, str_len);
-
 	return (str);
 }
