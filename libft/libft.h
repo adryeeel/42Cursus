@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 09:56:04 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/13 18:05:35 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/13 18:14:39 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ void				ft_putendl_fd(char *s, int fd);
 int					ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
 t_list				*ft_lstnew(void *content);
+void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
