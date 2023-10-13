@@ -6,13 +6,13 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 15:25:26 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/12 16:16:46 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/12 16:30:00 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_count_words(const char *s, char delimiter)
+static size_t	ft_count_words(const char *s, char delimiter)
 {
 	size_t	words_counter;
 
@@ -29,7 +29,7 @@ size_t	ft_count_words(const char *s, char delimiter)
 	return (words_counter);
 }
 
-char	*ft_strdup_delimiter(const char *str, char delimiter)
+static char	*ft_strdup_delimiter(const char *str, char delimiter)
 {
 	size_t	i;
 	char	*newstr;
