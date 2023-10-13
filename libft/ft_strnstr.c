@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 11:21:52 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/11 11:54:04 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/10/13 16:55:16 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,6 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	o_len;
-
-	o_len = len;
 	if (!(*little))
 		return ((char *)big);
 	while (len > 0 && *big)
