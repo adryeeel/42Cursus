@@ -4,6 +4,8 @@ This markdown tracks all subjects puzzle during my 42 experience. The mission is
 
 ## Libft
 
+Cryptography: Caeser cipher (rot13).
+
 ```
 Rnpu cebwrpg bs gur 97 Pbzzba Pber pbagnvaf na rapbqrq uvag. Sbe
 rnpu pvepyr, bayl bar cebwrpg cebivqrf gur pbeerpg uvag arrqrq sbe
@@ -20,6 +22,8 @@ Each person of the 97 Common Core conferences on encryption encrypts an encrypte
 ```
 
 ## ft_printf
+
+Cryptography: brainfuck code.
 
 ```
 ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>.>---.++++++++++++.++.+++
