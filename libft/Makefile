@@ -59,8 +59,8 @@ $(NAME): $(SRCS_OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $^ -o $@
 
-bonus: $(NAME) $(BONUS_OBJS)
-	ar rcs $^
+bonus: $(SRCS_OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $^
 
 fclean: clean
 	rm -rf $(NAME)
