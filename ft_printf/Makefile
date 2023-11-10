@@ -84,6 +84,7 @@ $(NAME): $(PRINTF_OBJS) $(MEM_OBJS) $(CTYPE_OBJS) $(STRING_OBJS)
 	$(CC) $(CFLAGS) -c $^ -o $@
 
 fclean: clean
+	rm -rf $(NAME)
 
 clean:
 	rm -rf $(PRINTF_OBJS) $(MEM_OBJS) $(CTYPE_OBJS) $(STRING_OBJS)
