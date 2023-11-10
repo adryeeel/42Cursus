@@ -67,28 +67,26 @@ STRING_SRCS =	ft_itoa.c						\
 
 PRINTF_SRCS = ft_printf.c	\
 
-MEM_OBJS = $(MEM_SRCS:.c=.o)
-CTYPE_OBJS = $(CTYPE_SRCS:.c=.o)
-STRING_OBJS =$(STRING_SRCS:.c=.o)
-PRINTF_OBJS = $(PRINTF_SRCS:.c=.o)
-
-OBJS = $(SRCS:.c=.o)
+MEM_OBJS = $(addprefix libs/$(MEM_DIR)/, $(MEM_SRCS:.c=.o))
+CTYPE_OBJS = $(addprefix libs/$(CTYPE_DIR)/, $(CTYPE_SRCS:.c=.o))
+STRING_OBJS = $(addprefix libs/$(STRING_DIR)/, $(STRING_SRCS:.c=.o))
+PRINTF_OBJS = $(addprefix libs/$(PRINTF_DIR)/, $(PRINTF_SRCS:.c=.o))
 
 debug:
-	@echo $(CTYPE_DIR)
+	@echo $(PRINTF_OBJS)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(PRINTF_OBJS) $(MEM_OBJS) $(CTYPE_OBJS) $(STRING_OBJS)
 	ar rcs $@ $^
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%/%.o: %/%.c
+	$(CC) $(CFLAGS) -c $^ -o $@
 
 fclean: clean
 
 clean:
-	rm -rf
+	rm -rf $(PRINTF_OBJS) $(MEM_OBJS) $(CTYPE_OBJS) $(STRING_OBJS)
 
 re: fclean all
 
