@@ -2,7 +2,7 @@ NAME = libftprintf.a
 BASENAME = $(patsubst lib%,%,$(basename $(NAME)))
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -g
+CFLAGS = -Wall -Wextra -Werror
 
 LIBS_DIR = libs
 
@@ -55,7 +55,9 @@ STRING_SRCS =	ft_itoa.c						\
 							ft_striteri.c				\
 							ft_putnbr_fd.c			\
 							ft_putstr_fd.c			\
+							ft_puthex_fd.c			\
 							ft_trimstart.c			\
+							ft_putunbr_fd.c			\
 							ft_putendl_fd.c			\
 							ft_strcasestr.c			\
 							ft_struppcase.c			\
@@ -63,11 +65,13 @@ STRING_SRCS =	ft_itoa.c						\
 							ft_strcasecmp.c			\
 							ft_putchar_fd.c			\
 							ft_strcontains.c		\
+							ft_putupphex_fd.c		\
 							ft_strcapitalize.c	\
 
 PRINTF_SRCS = ft_printf.c					\
 							ft_argslen.c				\
 							ft_get_specifier.c	\
+							ft_print_specifier.c
 
 MEM_OBJS = $(addprefix libs/$(MEM_DIR)/, $(MEM_SRCS:.c=.o))
 CTYPE_OBJS = $(addprefix libs/$(CTYPE_DIR)/, $(CTYPE_SRCS:.c=.o))
