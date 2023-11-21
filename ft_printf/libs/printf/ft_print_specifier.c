@@ -10,30 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
 #include "../string/ft_string.h"
+#include <stdarg.h>
 
-
-void ft_print_specifier(char specifier, va_list arguments)
+void	ft_print_specifier(char specifier, va_list arguments)
 {
 	if (specifier == 'c')
 		ft_putchar_fd(va_arg(arguments, int), STDOUT_FILENO);
-
 	else if (specifier == '%')
 		ft_putchar_fd('%', STDOUT_FILENO);
-
 	else if (specifier == 'd' || specifier == 'i')
 		ft_putnbr_fd(va_arg(arguments, int), STDOUT_FILENO);
-
 	else if (specifier == 'u')
 		ft_putunbr_fd(va_arg(arguments, unsigned int), STDOUT_FILENO);
-
 	else if (specifier == 's')
 		ft_putstr_fd(va_arg(arguments, char *), STDOUT_FILENO);
-
 	else if (specifier == 'x')
 		ft_puthex_fd(va_arg(arguments, unsigned int), STDOUT_FILENO);
-
 	else if (specifier == 'X')
 		ft_putupphex_fd(va_arg(arguments, unsigned int), STDOUT_FILENO);
 }

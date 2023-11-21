@@ -12,11 +12,11 @@
 
 #include <unistd.h>
 
-void ft_putupphex_fd(unsigned int n, int fd)
+void	ft_putupphex_fd(unsigned int n, int fd)
 {
 	char			c;
 	unsigned long	num;
-	char 			*hex_base;
+	char			*hex_base;
 
 	num = (unsigned long)n;
 	hex_base = "0123456789ABCDEF";

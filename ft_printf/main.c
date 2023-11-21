@@ -6,15 +6,15 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 19:43:58 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/11/14 19:29:44 by arocha-b         ###   ########.fr       */
+/*   Updated: 2023/11/21 18:04:41 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libs/printf/libprintf.h"
+#include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-	ft_printf("  %d", 10);
-	return 0;
+	ft_printf("%");
+	return (0);
 }

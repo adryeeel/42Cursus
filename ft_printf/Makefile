@@ -2,7 +2,7 @@ NAME = libftprintf.a
 BASENAME = $(patsubst lib%,%,$(basename $(NAME)))
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 LIBS_DIR = libs
 
@@ -69,8 +69,6 @@ STRING_SRCS =	ft_itoa.c						\
 							ft_strcapitalize.c	\
 
 PRINTF_SRCS = ft_printf.c					\
-							ft_argslen.c				\
-							ft_get_specifier.c	\
 							ft_print_specifier.c
 
 MEM_OBJS = $(addprefix libs/$(MEM_DIR)/, $(MEM_SRCS:.c=.o))
@@ -87,7 +85,7 @@ $(NAME): $(PRINTF_OBJS) $(MEM_OBJS) $(CTYPE_OBJS) $(STRING_OBJS)
 	$(CC) $(CFLAGS) -c $^ -o $@
 
 fclean: clean
-	rm -rf $(NAME) ft_printf
+	rm -rf $(NAME) ft_printf.out
 
 clean:
 	rm -rf $(PRINTF_OBJS) $(MEM_OBJS) $(CTYPE_OBJS) $(STRING_OBJS)
@@ -95,6 +93,6 @@ clean:
 re: fclean all
 
 main: $(NAME)
-	$(CC) $(CFLAGS) main.c -L . -l $(BASENAME) -o ft_printf
+	$(CC) $(CFLAGS) main.c -L . -l $(BASENAME) -o ft_printf.out
 
 .PHONY: all clean fclean re
