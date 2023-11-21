@@ -92,7 +92,4 @@ clean:
 
 re: fclean all
 
-main: $(NAME)
-	$(CC) $(CFLAGS) main.c -L . -l $(BASENAME) -o ft_printf.out
-
 .PHONY: all clean fclean re
