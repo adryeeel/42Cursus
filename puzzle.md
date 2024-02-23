@@ -37,3 +37,13 @@ Cryptography: brainfuck code.
 ```
 Famous man that directly believed in ???
 ```
+
+## get_next_line
+
+```
+/=∂/\/\[](_)§ /\/\@|V †|-|@ ̄| ̄/-/!570®1<|-\£1_`/ ¢@/\/\ε vv!7}{ ???
+```
+
+```
+????
+```
