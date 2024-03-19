@@ -12,11 +12,6 @@
 
 #include "get_next_line.h"
 
-static int	ft_lseek(int fd, size_t n)
-{
-	return (read(fd, 0, n));
-}
-
 static char	*buffer_get_line(const char *buffer)
 {
 	char	*nl_pos;
@@ -56,12 +51,8 @@ static char	*buffer_read(int fd, char *buffer)
 {
 	char			*read_buffer;
 	int				read_bytes;
-	static size_t	read_offset;
 
-	read_offset = 0;
 	read_buffer = ft_calloc(BUFFER_SIZE + NULL_CHAR, sizeof(char));
-	if (read_offset != 0 && ft_lseek(fd, read_offset))
-		return (NULL);
 	while (!ft_strchr(read_buffer, '\n'))
 	{
 		read_bytes = read(fd, read_buffer, BUFFER_SIZE);
@@ -69,7 +60,6 @@ static char	*buffer_read(int fd, char *buffer)
 			break ;
 		read_buffer[read_bytes] = '\0';
 		buffer = strmcat(buffer, read_buffer);
-		read_offset += read_bytes;
 	}
 	free(read_buffer);
 	if ((read_bytes < 0) || (read_bytes == 0 && !*buffer))
