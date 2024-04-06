@@ -1,39 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_parse_format.c                                  :+:      :+:    :+:   */
+/*   ft_get_specifier.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/22 16:33:37 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/23 01:46:47 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/03/26 10:06:33 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/03/26 10:06:49 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_parse_format(const char *format, va_list args)
+char	ft_get_specifier(const char *format_substr)
 {
-	size_t	i;
-	size_t	wrote_amount;
-
-	i = 0;
-	wrote_amount = 0;
-	while (format[i])
-	{
-		if (format[i] == '%' && ft_isspecifier(format[i + 1]))
-		{
-			wrote_amount += ft_print_specifier(format[i + 1], args);
-			i += 2;
-			continue ;
-		}
-		if (format[i] == '%')
-		{
-			i++;
-			continue ;
-		}
-		wrote_amount += write(STDOUT_FILENO, format + i, 1);
-		i++;
-	}
-	return (wrote_amount);
+	while (*format_substr && !ft_isspecifier(*format_substr))
+		format_substr++;
+	return (*format_substr);
 }

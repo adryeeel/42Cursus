@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putunbr_fd.c                                    :+:      :+:    :+:   */
+/*   ft_init_flags.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/22 01:11:47 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/23 13:51:49 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/03/23 03:28:13 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/05 17:52:02 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-size_t	ft_putunbr_fd(unsigned int num, int fd)
+void	ft_init_flags(t_flags *flags)
 {
-	char	c;
-	size_t	wrote_amount;
-
-	wrote_amount = 0;
-	if (num >= 10)
-		wrote_amount += ft_putunbr_fd(num / 10, fd);
-	c = num % 10 + '0';
-	write(fd, &c, 1);
-	return (++wrote_amount);
+	flags->dot = false;
+	flags->plus = false;
+	flags->zero = false;
+	flags->hash = false;
+	flags->minus = false;
+	flags->space = false;
+	flags->number = false;
+	flags->precision = 0;
+	flags->field_width = 0;
 }

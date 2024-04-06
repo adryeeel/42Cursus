@@ -6,13 +6,13 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 12:44:32 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/21 19:08:46 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/03/29 17:48:38 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-	return (write(fd, &c, 1));
+	write(fd, &c, 1);
 }

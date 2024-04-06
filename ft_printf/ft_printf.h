@@ -6,28 +6,95 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 10:08:36 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/23 13:56:54 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/05 17:52:11 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <unistd.h>
+# include "libft/libft.h"
 # include <stdarg.h>
 # include <stdbool.h>
-# include "libft/libft.h"
+# include <stdio.h>
+# include <unistd.h>
 
-size_t	ft_putnull_fd(int fd);
-bool	ft_isspecifier(char c);
-size_t	ft_nbrlen(long nbr, int base);
-size_t	ft_count_args(const char *format);
-int		ft_printf(const char *format, ...);
-size_t	ft_putunbr_fd(unsigned int num, int fd);
-size_t	ft_putupphex_fd(unsigned int num, int fd);
-size_t	ft_puthex_fd(unsigned long num, int fd);
-size_t	ft_putptr_fd(unsigned long ptr, int fd);
-size_t	ft_print_specifier(char specifier, va_list args);
-size_t	ft_parse_format(const char *format, va_list args);
+typedef struct s_flags
+{
+	bool	dot;
+	bool	plus;
+	bool	zero;
+	bool	hash;
+	bool	space;
+	bool	minus;
+	bool	number;
+
+	size_t	precision;
+	size_t	field_width;
+}			t_flags;
+
+bool		ft_isflag(char c);
+bool		ft_isspecifier(char c);
+
+void		ft_init_flags(t_flags *flags);
+int			ft_flag_size(const char *format_substr);
+t_flags		ft_parse_flags(const char *format_substr, char spec);
+
+size_t		ft_parse_i(const char *format_substr, long value, char spec);
+void		ft_parse_prefix_i(t_flags flags, char **str, long *value);
+size_t		ft_parse_field_i(t_flags flags, char *pad_str, long value);
+void		ft_parse_precision_i(t_flags flags, char **str, long value);
+
+void		ft_parse_precision_x(t_flags flags, char **str,
+				unsigned long value);
+size_t		ft_parse_x(const char *format_substr, unsigned long value,
+				char spec);
+void		ft_parse_prefix_x(t_flags flags, char **str, unsigned long value,
+				char spec);
+size_t		ft_parse_field_x(t_flags flags, char *pad_str, char spec,
+				unsigned long value);
+
+// size_t ft_parse_field_p(t_flags flags, unsigned long value);
+// size_t ft_parse_p(const char *format_substr, unsigned long value);
+
+size_t		ft_parse_field_c(t_flags flags, char value);
+size_t		ft_parse_c(const char *format_substr, char value);
+
+// char *ft_parse_precision_s(t_flags flags, char *value);
+size_t		ft_parse_s(const char *format_substr, char *value);
+size_t		ft_parse_field_s(t_flags flags, char *value, size_t n);
+
+size_t		ft_parse_null(t_flags flags, char spec);
+size_t		ft_parse_field_null(t_flags flags, char spec);
+
+// size_t ft_parse_u(const char *format_substr, unsigned value);
+// char *ft_parse_precision_u(t_flags flags, char *str, unsigned value);
+// size_t ft_parse_field_u(t_flags flags, char *pad_str, unsigned value);
+
+size_t		ft_print_char(char c);
+size_t		ft_print_str(char *s);
+size_t		ft_print_nbr(long num);
+// size_t	ft_print_nbr(int num);
+size_t		ft_print_null(char type);
+// size_t	ft_print_unbr(unsigned int num);
+size_t		ft_print_ptr(unsigned long ptr);
+size_t		ft_print_hex(unsigned long num);
+size_t		ft_print_uphex(unsigned int num);
+size_t		ft_print_padding(int width, char *pad);
+size_t		ft_print_prefix_i(t_flags flags, long *value);
+size_t		ft_print_prefix_x(t_flags flags, char spec, unsigned long value);
+
+size_t		ft_parse_format(const char *format, va_list args);
+size_t		ft_parse_substr(const char *format_substr, va_list args);
+
+char		*ft_xtoa(unsigned long num);
+size_t		ft_nbrlen(long nbr, int base);
+int			ft_printf(const char *format, ...);
+char		*ft_format_substr(const char *format);
+void		ft_strcat_safe(char **dest, char *src);
+char		ft_get_specifier(const char *format_substr);
+
+// size_t ft_print_specifier(char specifier, va_list args);
+// size_t	ft_parse_format(const char *format, va_list args);
 
 #endif

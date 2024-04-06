@@ -5,7 +5,9 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRCS =	ft_atoi.c				\
 				ft_itoa.c				\
+				ft_xtoa.c				\
 				ft_split.c			\
+				ft_nbrlen.c			\
 				ft_bzero.c			\
 				ft_calloc.c			\
 				ft_memchr.c			\
@@ -36,7 +38,8 @@ SRCS =	ft_atoi.c				\
 				ft_putstr_fd.c	\
 				ft_putnbr_fd.c	\
 				ft_putendl_fd.c	\
-				ft_putchar_fd.c
+				ft_putchar_fd.c	\
+				ft_struppcase.c
 
 BONUS_SRCS =	ft_lstmap_bonus.c				\
 							ft_lstnew_bonus.c				\

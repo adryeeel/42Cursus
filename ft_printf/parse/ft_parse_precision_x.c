@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_args.c                                    :+:      :+:    :+:   */
+/*   ft_parse_precision_x.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/20 19:35:34 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/20 20:06:25 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/03/29 17:28:03 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/02 16:03:01 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-size_t	ft_count_args(const char *format)
+void	ft_parse_precision_x(t_flags flags, char **str, unsigned long value)
 {
-	size_t	args_amount;
+	int		pad_size;
+	char	*join_str;
 
-	args_amount = 0;
-	while (*format)
+	if (!*str)
+		return ;
+	pad_size = flags.precision - ft_nbrlen(value, 16);
+	while (pad_size-- > 0)
 	{
-		if (*format == '%' && ft_isspecifier(*(format + 1)))
-		{
-			args_amount++;
-			format += 2;
-			continue ;
-		}
-		format++;
+		join_str = ft_strjoin(*str, "0");
+		free(*str);
+		*str = join_str;
 	}
-	return (args_amount);
 }

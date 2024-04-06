@@ -1,43 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_puthex_fd.c                                     :+:      :+:    :+:   */
+/*   ft_xtoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/21 11:02:17 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/23 13:57:39 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/03/29 19:09:30 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/03 02:10:50 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
+#define BASE "0123456789abcdef"
 
-#define HEX_BASE 16
-
-size_t	ft_puthex_fd(unsigned long num, int fd)
+char	*ft_xtoa(unsigned long num)
 {
-	char	digit;
-	char	*base;
+	char	*str;
+	char	*join_str;
+	char	*digit;
 	int		shift;
-	size_t	wrote_amount;
 
-	wrote_amount = 0;
-	base = "0123456789abcdef";
+	if (num == 0)
+		return (ft_strjoin("", "0"));
 	shift = sizeof(num) * 8 - 4;
+	str = ft_calloc(1, sizeof(char));
+	digit = ft_calloc(2, sizeof(char));
+	if (!str || !digit)
+		return (NULL);
 	while (shift >= 0)
 	{
-		digit = base[(num >> shift) & 0xF];
-		if (digit != '0' || wrote_amount > 0)
+		*digit = BASE[(num >> shift) & 0xF];
+		if (*digit != '0' || *str)
 		{
-			write(fd, &digit, 1);
-			wrote_amount++;
+			join_str = ft_strjoin(str, digit);
+			free(str);
+			str = join_str;
 		}
 		shift -= 4;
 	}
-	if (wrote_amount == 0)
-	{
-		write(fd, "0", 1);
-		wrote_amount++;
-	}
-	return (wrote_amount);
+	free(digit);
+	return (str);
 }

@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
+/*   ft_print_ptr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/21 00:41:09 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/23 13:56:03 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/03/29 17:42:15 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/03/29 17:57:15 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
+#include "../ft_printf.h"
 
-size_t	ft_nbrlen(long nbr, int base)
+size_t	ft_print_ptr(unsigned long ptr)
 {
-	size_t	nbrlen;
+	size_t	wrote_amount;
 
-	nbrlen = 0;
-	if (base < 0)
-		return (-1);
-	if (nbr < 0)
-		nbr = -nbr;
-	while (nbr > 0)
-	{
-		nbr /= base;
-		nbrlen++;
-	}
-	return (nbrlen);
+	wrote_amount = 2;
+	if (ptr == 0)
+		return (ft_print_null('p'));
+	write(STDOUT_FILENO, "0x", 2);
+	wrote_amount += ft_print_hex(ptr);
+	return (wrote_amount);
 }

@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 16:20:30 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/13 12:01:07 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/01 01:52:50 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,20 +53,18 @@ static void	ft_assign(char *str, long num, size_t len)
 	}
 }
 
-char	*ft_itoa(int n)
+char	*ft_itoa(long n)
 {
-	long	num;
 	char	*str;
 	size_t	str_len;
 
-	num = (long)n;
-	str_len = ft_count_digits(num);
-	if (num < 0)
+	str_len = ft_count_digits(n);
+	if (n < 0)
 		str_len++;
 	str = (char *)malloc((str_len + NULL_CHAR) * sizeof(char));
 	if (!str)
 		return (NULL);
 	*str = '\0';
-	ft_assign(str, num, str_len);
+	ft_assign(str, n, str_len);
 	return (str);
 }

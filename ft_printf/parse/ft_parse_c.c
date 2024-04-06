@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_parse_c.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/22 00:07:51 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/23 01:39:08 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/03/29 18:28:46 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/01 15:56:01 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-size_t	ft_putnullptr_fd(int fd)
+size_t	ft_parse_c(const char *format_substr, char value)
 {
-	return (write(fd, "(nil)", 5));
-}
-
-size_t	ft_putptr_fd(unsigned long ptr, int fd)
-{
+	t_flags	flags;
 	size_t	wrote_amount;
 
-	wrote_amount = 2;
-	if (ptr == 0)
-		return (ft_putnullptr_fd(fd));
-	write(fd, "0x", 2);
-	wrote_amount += ft_puthex_fd(ptr, fd);
+	wrote_amount = 0;
+	flags = ft_parse_flags(format_substr, 'c');
+	if (flags.number)
+		return (ft_parse_field_c(flags, value));
+	wrote_amount += ft_print_char(value);
 	return (wrote_amount);
 }

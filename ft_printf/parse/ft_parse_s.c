@@ -1,0 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_parse_s.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/29 18:28:46 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/04 23:16:37 by arocha-b         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../ft_printf.h"
+
+size_t	ft_parse_s(const char *format_substr, char *value)
+{
+	t_flags	flags;
+	size_t	wrote_amount;
+
+	wrote_amount = 0;
+	flags = ft_parse_flags(format_substr, 's');
+	if (!value)
+		return (ft_parse_null(flags, 's'));
+	if (flags.dot && flags.precision <= ft_strlen(value))
+		wrote_amount += ft_parse_field_s(flags, value, flags.precision);
+	else if (flags.number)
+		wrote_amount += ft_parse_field_s(flags, value, ft_strlen(value));
+	else
+		wrote_amount += ft_print_str(value);
+	return (wrote_amount);
+}
