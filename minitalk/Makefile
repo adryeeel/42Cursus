@@ -1,7 +1,7 @@
 NAME = minitalk
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -g
+CFLAGS = -Wall -Wextra -Werror
 
 LIBFT = libft.a
 LIBFT_DIR = libft

@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_specifier.c                                 :+:      :+:    :+:   */
+/*   ft_strcat_safe.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/26 10:06:33 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/13 22:43:34 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/04/03 01:52:25 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/16 17:24:44 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #define FT_PRINTF_PRIVATE_H
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-char	ft_get_specifier(const char *format_substr)
+void	ft_strcat_safe(char **dest, char *src)
 {
-	while (*format_substr && !ft_isspecifier(*format_substr))
-		format_substr++;
-	return (*format_substr);
+	char	*cat_str;
+	size_t	total_len;
+
+	if (!src || !dest)
+		return ;
+	total_len = ft_strlen(*dest) + ft_strlen(src);
+	cat_str = ft_calloc(total_len + NULL_CHAR, sizeof(char));
+	ft_strlcat(cat_str, *dest, total_len + NULL_CHAR);
+	ft_strlcat(cat_str, src, total_len + NULL_CHAR);
+	free(*dest);
+	*dest = cat_str;
 }

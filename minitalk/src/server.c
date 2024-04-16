@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/13 18:41:28 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/15 15:18:06 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/16 17:26:02 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void sig_handler(int signum, siginfo_t *info, void *context)
 {
 	static int i;
 	static char c;
-	
+
 	(void)context;
 
 	ft_btoc(signum, &c);
@@ -25,13 +25,13 @@ void sig_handler(int signum, siginfo_t *info, void *context)
 	{
 		if (c == '\0')
 		{
-			ft_printf("\n");
+			ft_putchar_fd('\n', STDOUT_FILENO);
 			kill(info->si_pid, SIGUSR2);
 			c = 0;
 			i = 0;
 			return;
 		}
-		ft_printf("%c", c);
+		ft_putchar_fd(c, STDOUT_FILENO);
 		c = 0;
 		i = 0;
 	}

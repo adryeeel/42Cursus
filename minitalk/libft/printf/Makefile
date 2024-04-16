@@ -4,10 +4,10 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS =	ft_printf.c										\
-				ft_isspecifier.c							\
-				ft_strcat_safe.c							\
-				ft_format_substr.c						\
-				ft_get_specifier.c						\
+				misc/ft_isspecifier.c					\
+				misc/ft_strcat_safe.c					\
+				misc/ft_format_substr.c				\
+				misc/ft_get_specifier.c				\
 \
 				flags/ft_isflag.c							\
 				flags/ft_flag_size.c					\

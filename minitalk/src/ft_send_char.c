@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 00:28:54 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/15 14:42:35 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/16 14:20:57 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void ft_send_char(pid_t pid, char c)
 		i++;
 		ft_await(25);
 	}
+
 	free(bin);
 }
