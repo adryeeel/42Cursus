@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 00:28:54 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/16 14:20:57 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/16 17:35:25 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,11 @@ void ft_send_char(pid_t pid, char c)
 		else
 			kill(pid, SIGUSR2);
 		i++;
-		ft_await(25);
+		if (!ft_await(25))
+		{
+			free(bin);
+			exit(EXIT_FAILURE);
+		}
 	}
-
 	free(bin);
 }

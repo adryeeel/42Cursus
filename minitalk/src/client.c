@@ -6,7 +6,7 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/13 18:41:30 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/15 15:02:26 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/16 17:34:26 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int g_sigsrv;
 
-void ft_await(size_t cycles)
+bool ft_await(size_t cycles)
 {
 	size_t i;
 
@@ -24,12 +24,14 @@ void ft_await(size_t cycles)
 		if (i == cycles)
 		{
 			ft_putstr_fd("No response from server.", STDERR_FILENO);
-			exit(EXIT_FAILURE);
+			return (false);
 		}
 		i++;
 		usleep(10);
 	}
 	g_sigsrv = 0;
+
+	return (true);
 }
 
 void sig_handler(int signum, siginfo_t *info, void *context)
