@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   ft_send_char.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/11 13:18:15 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/11 16:41:36 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/04/15 00:28:54 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/15 14:42:35 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define _XOPEN_SOURCE 700
+#include "../minitalk.h"
 
-#include <signal.h>
-#include <stdlib.h>
-
-int main(int argc, char const *argv[])
+void ft_send_char(pid_t pid, char c)
 {
-	pid_t srv_pid;
+	size_t i;
+	int *bin;
 
-	if (argc <= 1 || argc >= 4)
-		return (0);
-
-	srv_pid = atoi(argv[1]);
-	kill(srv_pid, SIGUSR1);
-
-	return (0);
+	i = 0;
+	bin = ft_ctob(c);
+	while (bin[i] != -1)
+	{
+		if (!bin[i])
+			kill(pid, SIGUSR1);
+		else
+			kill(pid, SIGUSR2);
+		i++;
+		ft_await(25);
+	}
+	free(bin);
 }
