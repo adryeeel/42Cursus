@@ -6,29 +6,14 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 16:20:30 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:25:35 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <stdlib.h>
+#include "ft_convert.h"
+#include "../string/ft_string.h"
 
-static size_t ft_count_digits(long num)
-{
-	size_t digits_amount;
-
-	digits_amount = 0;
-	if (num < 0)
-		num = -num;
-	if (num < 10)
-		return (1);
-	while (num)
-	{
-		num /= 10;
-		digits_amount++;
-	}
-	return (digits_amount);
-}
+#define DECIMAL 10
 
 static void ft_assign(char *str, long num, size_t len)
 {
@@ -58,7 +43,7 @@ char *ft_itoa(long n)
 	char *str;
 	size_t str_len;
 
-	str_len = ft_count_digits(n);
+	str_len = ft_nbrlen(n, DECIMAL);
 	if (n < 0)
 		str_len++;
 	str = (char *)malloc((str_len + NULL_CHAR) * sizeof(char));

@@ -6,13 +6,13 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 09:59:12 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/10 12:22:51 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:07:41 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_ctype.h"
+
 int	ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	return (ft_isupper(c) || ft_islower(c));
 }

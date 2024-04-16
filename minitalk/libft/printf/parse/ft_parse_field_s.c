@@ -6,10 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 17:28:39 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/02 02:25:29 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:42:05 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#define FT_PRINTF_PRIVATE_H
 #include "../ft_printf.h"
 
 static size_t	ft_print_str_n(const char *s, size_t n)

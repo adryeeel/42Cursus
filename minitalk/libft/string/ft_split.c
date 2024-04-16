@@ -6,11 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 15:25:26 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:23:02 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "ft_string.h"
 
 static size_t ft_count_words(const char *s, char delimiter)
 {

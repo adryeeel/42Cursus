@@ -6,10 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 18:28:46 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/05 17:20:37 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:42:39 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#define FT_PRINTF_PRIVATE_H
 #include "../ft_printf.h"
 
 static void	ft_struppcase_safe(char **str)

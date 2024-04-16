@@ -6,12 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 11:21:52 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:24:11 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <stdlib.h>
+#include "ft_string.h"
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {

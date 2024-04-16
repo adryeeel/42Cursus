@@ -6,19 +6,12 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 11:58:58 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:13:54 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <stdlib.h>
-
-static int ft_isspace(int c)
-{
-	if (c == ' ' || (c >= '\t' && c <= '\r'))
-		return (1);
-	return (0);
-}
+#include "ft_convert.h"
+#include "../ctype/ft_ctype.h"
 
 int ft_atoi(const char *nptr)
 {

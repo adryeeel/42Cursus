@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_mem.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 17:27:56 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/04/13 22:02:43 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/13 22:03:51 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#ifndef FT_MEM_H
+#define FT_MEM_H
+
 #include <stdlib.h>
 
-t_list *ft_lstnew(void *content)
-{
-	t_list *new_node;
+void	ft_bzero(void *s, size_t n);
+void	*ft_memset(void *s, int c, size_t n);
+void	*ft_calloc(size_t nmemb, size_t size);
+void	*ft_memchr(const void *str, int c, size_t n);
+void	*ft_memcpy(void *dest, const char *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
-	new_node = (t_list *)malloc(sizeof(t_list));
-	if (!new_node)
-		return (NULL);
-	if (!content)
-		new_node->content = NULL;
-	else
-		new_node->content = content;
-	new_node->next = NULL;
-	return (new_node);
-}
+
+#endif

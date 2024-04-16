@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_ctype.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 18:12:10 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/04/13 22:04:43 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/13 22:12:21 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#ifndef FT_CTYPE_H
+#define FT_CTYPE_H
 
-void ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list *last_node;
+int ft_isalnum(int c);
+int	ft_isalpha(int c);
+int	ft_isascii(int c);
+int	ft_isdigit(int c);
+int	ft_isprint(int c);
+int	ft_tolower(int c);
+int	ft_toupper(int c);
+int ft_isupper(int c);
+int ft_islower(int c);
+int ft_isspace(int c);
 
-	if (!(*lst))
-	{
-		ft_lstadd_front(lst, new);
-		return;
-	}
-	last_node = ft_lstlast(*lst);
-	last_node->next = new;
-}
+#endif

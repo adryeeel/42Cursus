@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_sll_shift.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 17:41:42 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/04/13 21:39:08 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/13 21:39:23 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "ft_sll.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void ft_sll_shift(t_sll *self)
 {
-	new->next = *lst;
-	*lst = new;
+	if (self->size <= 1)
+	{
+		self->head = NULL;
+		self->tail = NULL;
+		self->size = 0;
+
+		return;
+	}
+
+	self->head = self->head->next;
+	self->size--;
 }

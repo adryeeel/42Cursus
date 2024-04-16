@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_dequeue.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 18:00:00 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/04/13 21:00:35 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/13 21:17:48 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "ft_queue.h"
 
-int ft_lstsize(t_list *lst)
+void ft_dequeue(t_queue *q)
 {
-	int len;
+	t_node *node;
 
-	len = 0;
-	while (lst)
-	{
-		lst = lst->next;
-		len++;
-	}
-	return (len);
+	if (!q->head)
+		return;
+
+	node = q->head;
+	q->head = q->head->next;
+
+	if (!q->head)
+		q->tail = NULL;
+
+	free(node);
 }

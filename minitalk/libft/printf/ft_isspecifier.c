@@ -6,13 +6,14 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 19:38:44 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/02/22 00:57:24 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:44:39 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#define FT_PRINTF_PRIVATE_H
 #include "ft_printf.h"
 
-bool	ft_isspecifier(char c)
+bool ft_isspecifier(char c)
 {
 	if (c && ft_strchr("cspdiuxX%", c))
 		return (true);

@@ -6,10 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 00:27:16 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/02 02:39:22 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:42:36 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#define FT_PRINTF_PRIVATE_H
 #include "../ft_printf.h"
 
 size_t	ft_parse_substr(const char *format_substr, va_list args)

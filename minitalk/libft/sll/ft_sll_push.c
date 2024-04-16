@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
+/*   ft_sll_push.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 21:49:05 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/10 19:20:01 by arocha-b         ###   ########.fr       */
+/*   Created: 2024/04/13 21:35:15 by arocha-b          #+#    #+#             */
+/*   Updated: 2024/04/13 21:36:48 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <stdlib.h>
+#include "ft_sll.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void *))
+static void ft_sll_to_premier(t_sll *self, t_sll_node *new_node)
 {
-	t_list *tmp_node;
-	t_list *current_node;
+	new_node->next = NULL;
 
-	current_node = *lst;
-	while (current_node)
+	self->head = new_node;
+	self->tail = new_node;
+	self->size++;
+}
+
+void ft_sll_push(t_sll *self, t_sll_node *new_node)
+{
+	if (self->size == 0)
 	{
-		tmp_node = current_node;
-		current_node = current_node->next;
-		del(tmp_node->content);
-		free(tmp_node);
+		ft_sll_to_premier(self, new_node);
+		return;
 	}
-	*lst = NULL;
+
+	new_node->next = NULL;
+
+	self->size++;
+	self->tail->next = new_node;
+	self->tail = new_node;
 }

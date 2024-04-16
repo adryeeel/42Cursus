@@ -6,16 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 02:47:44 by arocha-b          #+#    #+#             */
-/*   Updated: 2023/10/10 12:28:08 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:08:46 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_islower(int c)
-{
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	return (0);
-}
+#include "ft_ctype.h"
 
 int	ft_toupper(int c)
 {

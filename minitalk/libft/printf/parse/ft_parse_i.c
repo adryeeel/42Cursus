@@ -6,10 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 03:30:47 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/05 16:13:30 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/13 22:42:18 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#define FT_PRINTF_PRIVATE_H
 #include "../ft_printf.h"
 
 static void	ft_concat_number(t_flags flags, char **str, long value)
