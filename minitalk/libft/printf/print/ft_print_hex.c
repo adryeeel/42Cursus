@@ -6,12 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 11:02:17 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/13 22:43:00 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/16 17:56:49 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define FT_PRINTF_PRIVATE_H
-#include "../ft_printf.h"
+#include "../ft_utils.h"
 
 #define HEX_BASE 16
 

@@ -11,13 +11,13 @@
 /* ************************************************************************** */
 
 #ifndef FT_PRINT_H
-#define FT_PRINT_H
+# define FT_PRINT_H
 
-#include <unistd.h>
+# include <unistd.h>
 
-void ft_putnbr_fd(long n, int fd);
-void ft_putchar_fd(char c, int fd);
-void ft_putstr_fd(char *s, int fd);
-void ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(long n, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 
 #endif

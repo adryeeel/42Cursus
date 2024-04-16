@@ -11,15 +11,15 @@
 /* ************************************************************************** */
 
 #ifndef FT_CONVERT_H
-#define FT_CONVERT_H
+# define FT_CONVERT_H
 
-#include <stdlib.h>
-#include "../mem/ft_mem.h"
+# include "../mem/ft_mem.h"
+# include <stdlib.h>
 
-int *ft_ctob(char c);
-char *ft_itoa(long n);
-int ft_atoi(const char *nptr);
-char *ft_xtoa(unsigned long num);
-size_t ft_nbrlen(long nbr, int base);
+int		*ft_ctob(char c);
+char	*ft_itoa(long n);
+int		ft_atoi(const char *nptr);
+char	*ft_xtoa(unsigned long num);
+size_t	ft_nbrlen(long nbr, int base);
 
 #endif

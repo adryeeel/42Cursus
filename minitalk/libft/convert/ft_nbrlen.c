@@ -12,9 +12,9 @@
 
 #include "ft_convert.h"
 
-size_t ft_nbrlen(long nbr, int base)
+size_t	ft_nbrlen(long nbr, int base)
 {
-	size_t nbrlen;
+	size_t	nbrlen;
 
 	nbrlen = 0;
 	if (nbr == 0)

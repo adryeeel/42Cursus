@@ -12,23 +12,18 @@
 
 #include "ft_sll.h"
 
-t_sll_node *ft_sll_get(t_sll *self, size_t index)
+t_sll_node	*ft_sll_get(t_sll *self, size_t index)
 {
-	t_sll_node *found_node;
+	t_sll_node	*found_node;
 
 	if (index > self->size - 1)
 		return (NULL);
-
 	if (index == 0)
 		return (self->head);
-
 	if (index == self->size - 1)
 		return (self->tail);
-
 	found_node = self->head->next;
-
 	while (--index > 0)
 		found_node = found_node->next;
-
 	return (found_node);
 }

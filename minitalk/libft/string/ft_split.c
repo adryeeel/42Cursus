@@ -12,9 +12,9 @@
 
 #include "ft_string.h"
 
-static size_t ft_count_words(const char *s, char delimiter)
+static size_t	ft_count_words(const char *s, char delimiter)
 {
-	size_t words_counter;
+	size_t	words_counter;
 
 	words_counter = 0;
 	while (*s)
@@ -29,11 +29,11 @@ static size_t ft_count_words(const char *s, char delimiter)
 	return (words_counter);
 }
 
-static char *ft_strdup_delimiter(const char *str, char delimiter)
+static char	*ft_strdup_delimiter(const char *str, char delimiter)
 {
-	size_t i;
-	char *newstr;
-	size_t newstr_len;
+	size_t	i;
+	char	*newstr;
+	size_t	newstr_len;
 
 	i = 0;
 	newstr_len = 0;
@@ -52,11 +52,11 @@ static char *ft_strdup_delimiter(const char *str, char delimiter)
 	return (newstr);
 }
 
-char **ft_split(const char *s, char c)
+char	**ft_split(const char *s, char c)
 {
-	size_t i;
-	char **words;
-	size_t words_amount;
+	size_t	i;
+	char	**words;
+	size_t	words_amount;
 
 	i = 0;
 	words_amount = ft_count_words(s, c);

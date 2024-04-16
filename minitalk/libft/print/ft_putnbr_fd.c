@@ -12,10 +12,10 @@
 
 #include "ft_print.h"
 
-void ft_putnbr_fd(long n, int fd)
+void	ft_putnbr_fd(long n, int fd)
 {
-	char c;
-	long num;
+	char	c;
+	long	num;
 
 	num = (long)n;
 	if (num < 0)

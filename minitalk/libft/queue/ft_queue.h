@@ -11,27 +11,27 @@
 /* ************************************************************************** */
 
 #ifndef FT_QUEUE_H
-#define FT_QUEUE_H
+# define FT_QUEUE_H
 
-#include <stdlib.h>
-#include "../mem/ft_mem.h"
+# include "../mem/ft_mem.h"
+# include <stdlib.h>
 
 typedef struct s_node
 {
-	void *data;
-	struct s_node *next;
+	void			*data;
+	struct s_node	*next;
 
-} t_node;
+}					t_node;
 
 typedef struct s_queue
 {
-	t_node *head;
-	t_node *tail;
+	t_node			*head;
+	t_node			*tail;
 
-} t_queue;
+}					t_queue;
 
-void ft_dequeue(t_queue *q);
-void ft_init_queue(t_queue *q);
-void ft_enqueue(t_queue *q, void *data);
+void				ft_dequeue(t_queue *q);
+void				ft_init_queue(t_queue *q);
+void				ft_enqueue(t_queue *q, void *data);
 
 #endif

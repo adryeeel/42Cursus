@@ -12,10 +12,10 @@
 
 #include "ft_string.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	const char *o_s;
-	size_t s_len;
+	const char	*o_s;
+	size_t		s_len;
 
 	s_len = ft_strlen(s) + 1;
 	o_s = s + s_len - 1;

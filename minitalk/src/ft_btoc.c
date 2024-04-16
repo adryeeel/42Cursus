@@ -12,7 +12,7 @@
 
 #include "../minitalk.h"
 
-void ft_btoc(int signum, char *c)
+void	ft_btoc(int signum, char *c)
 {
 	if (signum == SIGUSR1)
 		*c <<= 1;

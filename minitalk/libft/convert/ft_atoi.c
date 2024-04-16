@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_convert.h"
 #include "../ctype/ft_ctype.h"
+#include "ft_convert.h"
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	long num;
-	int sign;
+	long	num;
+	int		sign;
 
 	num = 0;
 	sign = 1;

@@ -6,12 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 17:28:03 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/13 22:42:24 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/16 17:56:49 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define FT_PRINTF_PRIVATE_H
-#include "../ft_printf.h"
+#include "../ft_utils.h"
 
 void	ft_parse_precision_i(t_flags flags, char **str, long value)
 {

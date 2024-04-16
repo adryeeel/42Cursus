@@ -12,35 +12,28 @@
 
 #include "ft_queue.h"
 
-static t_node *ft_get_node(void *data)
+static t_node	*ft_get_node(void *data)
 {
-	t_node *node;
+	t_node	*node;
 
 	node = ft_calloc(1, sizeof(t_node));
-
 	if (!node)
 		return (NULL);
-
 	node->data = data;
 	node->next = NULL;
-
 	return (node);
 }
 
-void ft_enqueue(t_queue *q, void *data)
+void	ft_enqueue(t_queue *q, void *data)
 {
-	t_node *node;
+	t_node	*node;
 
 	node = ft_get_node(data);
-
 	if (!q || !node)
-		return;
-
+		return ;
 	if (q->tail)
 		q->tail->next = node;
-
 	q->tail = node;
-
 	if (!q->head)
 		q->head = node;
 }

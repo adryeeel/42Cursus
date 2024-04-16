@@ -12,7 +12,7 @@
 
 #include "ft_queue.h"
 
-void ft_init_queue(t_queue *q)
+void	ft_init_queue(t_queue *q)
 {
 	q->head = NULL;
 	q->tail = NULL;

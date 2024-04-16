@@ -13,12 +13,12 @@
 #include "../libft.h"
 #define BASE "0123456789abcdef"
 
-char *ft_xtoa(unsigned long num)
+char	*ft_xtoa(unsigned long num)
 {
-	char *str;
-	char *join_str;
-	char *digit;
-	int shift;
+	char	*str;
+	char	*join_str;
+	char	*digit;
+	int		shift;
 
 	if (num == 0)
 		return (ft_strjoin("", "0"));

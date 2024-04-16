@@ -12,19 +12,18 @@
 
 #include "ft_sll.h"
 
-void ft_sll_pop(t_sll *self)
+void	ft_sll_pop(t_sll *self)
 {
+	t_sll_node	*new_tail;
+
 	if (self->size <= 1)
 	{
 		self->head = NULL;
 		self->tail = NULL;
 		self->size = 0;
-
-		return;
+		return ;
 	}
-
-	t_sll_node *new_tail = ft_sll_get(self, self->size - 2);
-
+	new_tail = ft_sll_get(self, self->size - 2);
 	new_tail->next = NULL;
 	self->tail = new_tail;
 	self->size--;

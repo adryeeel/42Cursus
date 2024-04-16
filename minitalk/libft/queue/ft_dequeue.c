@@ -12,18 +12,15 @@
 
 #include "ft_queue.h"
 
-void ft_dequeue(t_queue *q)
+void	ft_dequeue(t_queue *q)
 {
-	t_node *node;
+	t_node	*node;
 
 	if (!q->head)
-		return;
-
+		return ;
 	node = q->head;
 	q->head = q->head->next;
-
 	if (!q->head)
 		q->tail = NULL;
-
 	free(node);
 }

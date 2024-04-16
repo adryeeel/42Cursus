@@ -12,14 +12,13 @@
 
 #include "ft_sll.h"
 
-void ft_sll_destroy(t_sll *self)
+void	ft_sll_destroy(t_sll *self)
 {
-	t_sll_node *temp_node;
-	t_sll_node *current_node;
+	t_sll_node	*temp_node;
+	t_sll_node	*current_node;
 
 	temp_node = NULL;
 	current_node = self->head;
-
 	while (current_node != NULL)
 	{
 		temp_node = current_node;

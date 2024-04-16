@@ -12,11 +12,11 @@
 
 #include "ft_string.h"
 
-char *ft_struppcase(char *s)
+char	*ft_struppcase(char *s)
 {
-	size_t index;
-	char *upper_str;
-	size_t str_size;
+	size_t	index;
+	char	*upper_str;
+	size_t	str_size;
 
 	index = 0;
 	str_size = ft_strlen(s);

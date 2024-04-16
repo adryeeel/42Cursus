@@ -12,7 +12,7 @@
 
 #include "ft_string.h"
 
-static int ft_contains(const char *to_search, const char to_found)
+static int	ft_contains(const char *to_search, const char to_found)
 {
 	while (*to_search)
 		if (*to_search++ == to_found)
@@ -20,11 +20,11 @@ static int ft_contains(const char *to_search, const char to_found)
 	return (0);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *end_s1;
-	char *trimmed;
-	size_t trimmed_len;
+	char	*end_s1;
+	char	*trimmed;
+	size_t	trimmed_len;
 
 	end_s1 = (char *)s1 + ft_strlen(s1) - NULL_CHAR;
 	while (*s1 && ft_contains(set, *s1))

@@ -12,17 +12,15 @@
 
 #include "ft_sll.h"
 
-void ft_sll_shift(t_sll *self)
+void	ft_sll_shift(t_sll *self)
 {
 	if (self->size <= 1)
 	{
 		self->head = NULL;
 		self->tail = NULL;
 		self->size = 0;
-
-		return;
+		return ;
 	}
-
 	self->head = self->head->next;
 	self->size--;
 }

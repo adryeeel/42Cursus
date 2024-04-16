@@ -10,18 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_convert.h"
 #include "../string/ft_string.h"
+#include "ft_convert.h"
 
 #define DECIMAL 10
 
-static void ft_assign(char *str, long num, size_t len)
+static void	ft_assign(char *str, long num, size_t len)
 {
 	if (num == 0)
 	{
 		*str++ = '0';
 		*str = '\0';
-		return;
+		return ;
 	}
 	if (num < 0)
 	{
@@ -38,10 +38,10 @@ static void ft_assign(char *str, long num, size_t len)
 	}
 }
 
-char *ft_itoa(long n)
+char	*ft_itoa(long n)
 {
-	char *str;
-	size_t str_len;
+	char	*str;
+	size_t	str_len;
 
 	str_len = ft_nbrlen(n, DECIMAL);
 	if (n < 0)

@@ -12,9 +12,9 @@
 
 #include "ft_string.h"
 
-static size_t ft_strnlen(const char *s, size_t size)
+static size_t	ft_strnlen(const char *s, size_t size)
 {
-	size_t len;
+	size_t	len;
 
 	len = 0;
 	while (len++ < size && *s++)
@@ -22,12 +22,12 @@ static size_t ft_strnlen(const char *s, size_t size)
 	return (--len);
 }
 
-size_t ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	char *o_dst;
-	const char *o_src;
-	size_t dst_len;
-	size_t free_bytes;
+	char		*o_dst;
+	const char	*o_src;
+	size_t		dst_len;
+	size_t		free_bytes;
 
 	dst_len = ft_strnlen(dst, size);
 	free_bytes = size - dst_len;

@@ -11,15 +11,15 @@
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
-#include "sll/ft_sll.h"
-#include "mem/ft_mem.h"
-#include "ctype/ft_ctype.h"
-#include "queue/ft_queue.h"
-#include "print/ft_print.h"
-#include "printf/ft_printf.h"
-#include "string/ft_string.h"
-#include "convert/ft_convert.h"
+# include "convert/ft_convert.h"
+# include "ctype/ft_ctype.h"
+# include "mem/ft_mem.h"
+# include "print/ft_print.h"
+# include "printf/ft_printf.h"
+# include "queue/ft_queue.h"
+# include "sll/ft_sll.h"
+# include "string/ft_string.h"
 
 #endif

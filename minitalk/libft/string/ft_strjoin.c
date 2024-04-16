@@ -12,10 +12,10 @@
 
 #include "ft_string.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *jnd_str;
-	size_t size;
+	char	*jnd_str;
+	size_t	size;
 
 	size = ft_strlen(s1) + ft_strlen(s2) + 1;
 	jnd_str = (char *)malloc(size * sizeof(char));

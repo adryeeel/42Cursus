@@ -12,10 +12,10 @@
 
 #include "../minitalk.h"
 
-void ft_send_char(pid_t pid, char c)
+void	ft_send_char(pid_t pid, char c)
 {
-	size_t i;
-	int *bin;
+	size_t	i;
+	int		*bin;
 
 	i = 0;
 	bin = ft_ctob(c);

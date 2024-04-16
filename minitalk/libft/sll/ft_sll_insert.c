@@ -12,22 +12,23 @@
 
 #include "ft_sll.h"
 
-void ft_sll_insert(t_sll *self, t_sll_node *new_node, size_t index)
+void	ft_sll_insert(t_sll *self, t_sll_node *new_node, size_t index)
 {
+	t_sll_node	*curr_node;
+	t_sll_node	*prev_node;
+
 	if (index <= 0)
 	{
 		ft_sll_unshift(self, new_node);
-		return;
+		return ;
 	}
 	if (index >= self->size)
 	{
 		ft_sll_push(self, new_node);
-		return;
+		return ;
 	}
-
-	t_sll_node *curr_node = ft_sll_get(self, index);
-	t_sll_node *prev_node = ft_sll_get(self, --index);
-
+	curr_node = ft_sll_get(self, index);
+	prev_node = ft_sll_get(self, --index);
 	prev_node->next = new_node;
 	new_node->next = curr_node;
 	self->size++;

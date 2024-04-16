@@ -12,15 +12,13 @@
 
 #include "../minitalk.h"
 
-void sig_handler(int signum, siginfo_t *info, void *context)
+void	sig_handler(int signum, siginfo_t *info, void *context)
 {
-	static int i;
-	static char c;
+	static int	i;
+	static char	c;
 
 	(void)context;
-
 	ft_btoc(signum, &c);
-
 	if (++i == 8)
 	{
 		if (c == '\0')
@@ -29,7 +27,7 @@ void sig_handler(int signum, siginfo_t *info, void *context)
 			kill(info->si_pid, SIGUSR2);
 			c = 0;
 			i = 0;
-			return;
+			return ;
 		}
 		ft_putchar_fd(c, STDOUT_FILENO);
 		c = 0;
@@ -38,14 +36,12 @@ void sig_handler(int signum, siginfo_t *info, void *context)
 	kill(info->si_pid, SIGUSR1);
 }
 
-int main(void)
+int	main(void)
 {
 	ft_init_signal(SIGUSR1, sig_handler);
 	ft_init_signal(SIGUSR2, sig_handler);
 	ft_printf("%d\n", getpid());
-
 	while (1)
 		pause();
-
 	return (0);
 }

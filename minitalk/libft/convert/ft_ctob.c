@@ -12,22 +12,19 @@
 
 #include "ft_convert.h"
 
-int *ft_ctob(char c)
+int	*ft_ctob(char c)
 {
-	int *bin;
-	size_t i;
-	size_t index;
+	int		*bin;
+	size_t	i;
+	size_t	index;
 
 	i = 8;
 	index = 0;
 	bin = ft_calloc(8 + 1, sizeof(int));
-
 	if (!bin)
 		return (NULL);
-
 	while (i-- > 0)
 		bin[index++] = (c >> i) & 1;
 	bin[index] = -1;
-
 	return (bin);
 }

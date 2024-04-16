@@ -12,11 +12,11 @@
 
 #include "ft_string.h"
 
-char *ft_strmapi(const char *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char *newstr;
-	size_t index;
-	size_t s_len;
+	char	*newstr;
+	size_t	index;
+	size_t	s_len;
 
 	index = 0;
 	s_len = ft_strlen(s);

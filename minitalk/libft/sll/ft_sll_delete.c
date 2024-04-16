@@ -12,25 +12,23 @@
 
 #include "ft_sll.h"
 
-void ft_sll_delete(t_sll *self, size_t index)
+void	ft_sll_delete(t_sll *self, size_t index)
 {
-	t_sll_node *prev_node;
-	t_sll_node *next_node;
+	t_sll_node	*prev_node;
+	t_sll_node	*next_node;
 
 	if (index <= 0)
 	{
 		ft_sll_shift(self);
-		return;
+		return ;
 	}
 	else if (index >= self->size - 1)
 	{
 		ft_sll_pop(self);
-		return;
+		return ;
 	}
-
 	prev_node = ft_sll_get(self, index - 1);
 	next_node = ft_sll_get(self, index + 1);
-
 	free(prev_node->next);
 	prev_node->next = next_node;
 	self->size--;

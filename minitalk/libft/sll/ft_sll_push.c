@@ -12,25 +12,22 @@
 
 #include "ft_sll.h"
 
-static void ft_sll_to_premier(t_sll *self, t_sll_node *new_node)
+static void	ft_sll_to_premier(t_sll *self, t_sll_node *new_node)
 {
 	new_node->next = NULL;
-
 	self->head = new_node;
 	self->tail = new_node;
 	self->size++;
 }
 
-void ft_sll_push(t_sll *self, t_sll_node *new_node)
+void	ft_sll_push(t_sll *self, t_sll_node *new_node)
 {
 	if (self->size == 0)
 	{
 		ft_sll_to_premier(self, new_node);
-		return;
+		return ;
 	}
-
 	new_node->next = NULL;
-
 	self->size++;
 	self->tail->next = new_node;
 	self->tail = new_node;
