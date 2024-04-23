@@ -6,13 +6,11 @@
 /*   By: arocha-b <arocha-b@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/13 18:41:30 by arocha-b          #+#    #+#             */
-/*   Updated: 2024/04/23 21:03:07 by arocha-b         ###   ########.fr       */
+/*   Updated: 2024/04/23 21:04:44 by arocha-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../minitalk.h"
-#include <time.h>
-#include <stdio.h>
 
 static int g_sigsrv;
 
