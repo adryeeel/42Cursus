@@ -34,7 +34,7 @@ Cryptography: brainfuck code.
 --.-.<<.>>+++++.+++++.<<.>-------...
 ```
 
-```
+```text
 Famous man that directly believed in ???
 ```
 
