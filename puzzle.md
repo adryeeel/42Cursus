@@ -40,10 +40,39 @@ Famous man that directly believed in ???
 
 ## get_next_line
 
+Cryptography: Unknown.
+
 ```
 /=∂/\/\[](_)§ /\/\@|V †|-|@ ̄| ̄/-/!570®1<|-\£1_`/ ¢@/\/\ε vv!7}{ ???
 ```
 
 ```
 ????
+```
+
+## Born2beroot
+
+Cryptography: Unknown.
+
+```
+0010 01 11 111 001 000 11 01 10 1 0000 01 1 1010 111 11 0 000
+011 00 1 0000 1 0000 0 01 0100 1 0 010 10 01 1 0 0001 0 010 000
+00 111 10 111 0010 001100 001100 001100
+```
+
+```
+???
+```
+
+## Minitalk
+
+Cryptography: Unknown.
+
+```
+file.bfe:VAAe8ElCrUAbXivz0ueiIpv/u/ia9PL50+HI+8/bgPKLESHlp
+tPLpu0PW9zWV/LwDVaOqCRCGu6Gopk1X0i6Kn7t
+```
+
+```
+???
 ```
