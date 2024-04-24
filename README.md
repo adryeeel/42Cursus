@@ -53,9 +53,9 @@ Below is mine.
 
 | No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
 | --- | --- | --- | :---: | :---: | :---: |
-| 1️⃣ | 🌟 **[minitalk](https://github.com/adryeeel/minitalk)** | A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library. | ✅ | 125% | 43/50 |
-| 2️⃣ | 🌟 **[push_swap](https://github.com/adryeeel/push_swap)** | Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions. | 🚧 | 0% | 0/60 |
-| 3️⃣ | 🌟 **[so_long](https://github.com/adryeeel/so_long)** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | ❌ | 0% | 0/60 |
+| 1️⃣ | **[minitalk](https://github.com/adryeeel/minitalk)** | A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library. | ✅ | 125% | 43/50 |
+| 2️⃣ | **[push_swap](https://github.com/adryeeel/push_swap)** | Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions. | 🚧 | 0% | 0/60 |
+| 3️⃣ | **[so_long](https://github.com/adryeeel/so_long)** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | ❌ | 0% | 0/60 |
 
 ### 🟢 Rank 03
 
