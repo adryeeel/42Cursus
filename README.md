@@ -34,33 +34,25 @@ Below is mine.
 
 1️⃣ 🌟 **[Libft](https://github.com/adryeeel/libft)** - A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library.
 
-🚀 **Status**: ✅
-
-🏆 **Score**: 125/125
-
-⌛ **Time**: 45/70
+- 🚀 **Status**: ✅
+- 🏆 **Score**: 125/125
+- ⌛ **Time**: 45/70
 
 ---
 
 2️⃣ 🌟 **[ft_printf](https://github.com/adryeeel/ft_printf)** - Recoding the features of the standard C library printf function.
 
-🚀 **Status**: ✅
-
-🏆 **Score**: 125/125
-
-⌛ **Time**: 120/70
+- 🚀 **Status**: ✅
+- 🏆 **Score**: 125/125
+- ⌛ **Time**: 120/70
 
 ---
 
 3️⃣ 🌟 **[get_next_line](https://github.com/adryeeel/get_next_line)** - A function write in C that returns a line read from a file descriptor.
 
-🚀 **Status**: ✅
-
-🏆 **Score**: 125/125
-
-⌛ **Time**: 50/70
-
----
+- 🚀 **Status**: ✅
+- 🏆 **Score**: 125/125
+- ⌛ **Time**: 50/70
 
 ### 🟡 Rank 02
 
