@@ -1,6 +1,6 @@
 # 42cursus
 
-This repository tracks my journey through the 42 common core curriculum. Follow along as I tackle the challenges and milestones of the 42cursus, documenting my progress in this README. From mastering the basics to diving into advanced topics, this repository serves as a map of my learning adventure.
+This repository tracks my journey through the 42 common core and piscine curriculum. Follow along as I tackle the challenges and milestones of the 42cursus, documenting my progress in this README. From mastering the basics to diving into advanced topics, this repository serves as a map of my learning adventure.
 
 ## The 42 experience
 
@@ -21,6 +21,36 @@ What expect from a 42 school? Well... here we go:
 - **Iterative Learning**: Students often redo projects multiple times to improve their skills and understanding. This iterative approach allows for continuous learning and refinement of skills.
 
 Do you think you can handle this? 😉
+
+## Piscine
+
+_Piscine_ is a French term meaning "swimming pool" that refers to a intensive and immersive programming boot camp that serves as the entry point to 42 school course.
+
+During the piscine, prospective students, known as "pisciners", undergo a rigorous four to six-week evaluation period where they are introduced to the fundamentals of programming and problem-solving.
+
+The piscine is designed to identify individuals with the potential to excel in the field of computer science, regardless of their background or prior experience.
+
+Particularly, I did the #7 C piscine of 42 Porto and acquired great skills and some achievements through my journey. It had a total of 16 solo projects, 4 exams, 4 rushes and a final BSQ group project. Below you can see how I performed.
+
+### Projects
+
+0️⃣ ✴️ **Eu aceito Porto** - Introduces the pisciner to the world of `git` and `SSH` authetication.
+
+- 🚀 **Status**: ✅
+- 🏆 **Score**: 100/100
+- ⌛ **Time**: 1/1
+
+---
+
+1️⃣
+
+### Exams
+
+### Rushes
+
+Rushes are group projects that happen during the weekends of the piscine. They are intensive and demanding endeavors that test the skills, resilience, and teamwork of students.
+
+In total, there are four rush projects. Unfortunaly, during my during piscine I was not able to accomplish any of them, but by trying, I was able to acquire insane communication skills, teammork, and problem-solving capabilities. These skills help me a lot later in completing other C piscine projects.
 
 ## Common core
 
