@@ -1,4 +1,4 @@
-# 42cursus
+# 42Cursus
 
 This repository tracks my journey through the 42 common core and piscine curriculum. Follow along as I tackle the challenges and milestones of the 42cursus, documenting my progress in this README. From mastering the basics to diving into advanced topics, this repository serves as a map of my learning adventure.
 
