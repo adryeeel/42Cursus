@@ -42,9 +42,9 @@ Below is mine.
 
 ### 🟠 Rank 01
 
-| No. | 📃 Title | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
+| No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
 | --- | --- | --- | :---: | :---: | :---: |
-| 1️⃣ | 🌟 [Libft](https://github.com/adryeeel/libft) | A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library. | ✅ | 125% | 45/70 |
+| 1️⃣ | 🌟 [libft](https://github.com/adryeeel/libft) | A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library. | ✅ | 125% | 45/70 |
 | 2️⃣ | 🌟 [ft_printf](https://github.com/adryeeel/ft_printf) | Recoding the features of the standard C library printf function. | ✅ | 125% | 120/70 |
 | 3️⃣ | 🌟 [get_next_line](https://github.com/adryeeel/get_next_line) | A function write in C that returns a line read from a file descriptor. | ✅ | 125% | 50/70 |
 | 4️⃣ | 🌟 [Born2beroot](https://github.com/adryeeel/born2beroot) | Setting up a Linux server through the wonderful world of virtualization. | ✅ | 125% | 40/40 |
