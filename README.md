@@ -30,11 +30,13 @@ As you progress through the curriculum and achieve higher ranks, you'll tackle p
 
 Below is mine.
 
-### Rank 01
+### 🟠 Rank 01
 
 1️⃣ 🌟 **[Libft](https://github.com/adryeeel/libft)** - A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library.
 
-🏆 Score: 125%
+🚀 **Status**: ✅
+
+🏆 **Score**: 125/125
 
 ---
 
@@ -46,15 +48,15 @@ Below is mine.
 
 ---
 
-### Rank 02
+### 🟡 Rank 02
 
-### Rank 03
+### 🟢 Rank 03
 
-### Rank 04
+### 🔵 Rank 04
 
-### Rank 05
+### 🔴 Rank 05
 
-### Rank 06
+### 🟣 Rank 06
 
 ## Achievements
 
