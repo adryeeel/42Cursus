@@ -95,6 +95,6 @@ and some other basic gameplay elements of a 2D C game.
 
 ### 🟣 Rank 06
 
-## Achievements
+## 🏅 Achievements
 
-- Participation in Sogrape Hackathon.
+- 🍇 Participation in [Sogrape Hackathon](https://github.com/maricard18/hackathon-sogrape).
