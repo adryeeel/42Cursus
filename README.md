@@ -97,4 +97,4 @@ and some other basic gameplay elements of a 2D C game.
 
 ## 🏅 Achievements
 
-- 🍇 **Participation in Sogrape Hackathon**: Our team joined the Sogrape Hackathon and created an automated system for gathering data and displaying it dynamically. The system serves as a centralized platform for Sogrape employees, making it easier for them to access both raw data and important metrics. It helps streamline the monitoring and analysis of online store prices.
+- 🍇 **Participation in Sogrape Hackathon**: Our team joined the Sogrape Hackathon and created an automated system for scrapping data and displaying it dynamically on web dashboard. The system serves as a centralized platform for Sogrape employees, making it easier for them to access both raw data and important metrics. It helps streamline the monitoring and analysis of online store prices.
