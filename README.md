@@ -52,6 +52,16 @@ Below is mine.
 
 ---
 
+3️⃣ 🌟 **[get_next_line](https://github.com/adryeeel/get_next_line)** - A function write in C that returns a line read from a file descriptor.
+
+🚀 **Status**: ✅
+
+🏆 **Score**: 125/125
+
+⌛ **Time**: 60/70
+
+---
+
 ### 🟡 Rank 02
 
 ### 🟢 Rank 03
