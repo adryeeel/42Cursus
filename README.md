@@ -38,6 +38,8 @@ Below is mine.
 
 🏆 **Score**: 125/125
 
+⌛ **Hours**: 45/70
+
 ---
 
 2️⃣ 🌟 **[ft_printf](https://github.com/adryeeel/ft_printf)** - Recoding the features of the standard C library printf function.
@@ -45,6 +47,8 @@ Below is mine.
 🚀 **Status**: ✅
 
 🏆 **Score**: 125/125
+
+⌛ **Hours**: 120/70
 
 ---
 
