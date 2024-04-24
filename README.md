@@ -34,21 +34,21 @@ Below is mine.
 
 1️⃣ 🌟 **[Libft](https://github.com/adryeeel/libft)** - A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library.
 
-🚀 **Status**: ✅
+🚀 **Status**: Done ✅
 
 🏆 **Score**: 125/125
 
-⌛ **Hours**: 45/70
+⌛ **Time**: 45/70 hours
 
 ---
 
 2️⃣ 🌟 **[ft_printf](https://github.com/adryeeel/ft_printf)** - Recoding the features of the standard C library printf function.
 
-🚀 **Status**: ✅
+🚀 **Status**: Done ✅
 
 🏆 **Score**: 125/125
 
-⌛ **Hours**: 120/70
+⌛ **Time**: 120/70 hours
 
 ---
 
