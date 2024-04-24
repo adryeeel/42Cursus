@@ -54,7 +54,38 @@ Below is mine.
 - 🏆 **Score**: 125/125
 - ⌛ **Time**: 50/70
 
+---
+
+4️⃣ 🌟 **[Born2beroot](https://github.com/adryeeel/born2beroot)** - Setting up a Linux server through the wonderful world of virtualization.
+
+- 🚀 **Status**: ✅
+- 🏆 **Score**: 125/125
+- ⌛ **Time**: 40/40
+
 ### 🟡 Rank 02
+
+1️⃣ 🌟 **[minitalk](https://github.com/adryeeel/minitalk)** - A minimalistic communication protocol implementation using UNIX signals and C.
+
+- 🚀 **Status**: ✅
+- 🏆 **Score**: 125/125
+- ⌛ **Time**: 50/50
+
+---
+
+2️⃣ 🌟 **[push_swap](https://github.com/adryeeel/push_swap)** - Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions.
+
+- 🚀 **Status**: 🚧
+- 🏆 **Score**: 0/125
+- ⌛ **Time**: 0/60
+
+---
+
+3️⃣ 🌟 **[so_long](https://github.com/adryeeel/so_long)** - Textures, sprites,
+and some other basic gameplay elements of a 2D C game.
+
+- 🚀 **Status**: ❌
+- 🏆 **Score**: 0/125
+- ⌛ **Time**: 0/60
 
 ### 🟢 Rank 03
 
