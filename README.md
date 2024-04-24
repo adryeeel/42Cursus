@@ -32,6 +32,20 @@ Below is mine.
 
 ### Rank 01
 
+1️⃣ 🌟 **[Libft](https://github.com/adryeeel/libft)** - A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library.
+
+🏆 Score: 125%
+
+---
+
+2️⃣ 🌟 **[ft_printf](https://github.com/adryeeel/ft_printf)** - Recoding the features of the standard C library printf function.
+
+🚀 **Status**: ✅
+
+🏆 **Score**: 125/125
+
+---
+
 ### Rank 02
 
 ### Rank 03
