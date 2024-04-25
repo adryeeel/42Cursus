@@ -36,7 +36,7 @@ I have a very special repository where I documented all my experience and perfom
 
 The 42 common core features a ranked-based system that tailors project difficulty to your skill level.
 
-As you progress through the curriculum and achieve higher ranks, you'll tackle projects specifically crafted to challenge and expand your abilities. This dynamic approach ensures that each project is finely tuned to match your current expertise, providing an optimized learning experience at every stage of our journey.
+As you progress through the curriculum and achieve higher ranks, you'll tackle projects specifically crafted to challenge and expand your abilities. This dynamic approach ensures that each project is finely tuned to improve your current expertise, providing an optimized learning experience at every stage of our journey.
 
 Below is mine.
 
