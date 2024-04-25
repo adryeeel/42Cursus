@@ -99,7 +99,7 @@ Below is mine.
 | No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
 | :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **ft_transcendence** | A multiplayer and AI pong game using web technologies. | ❌ | 0% | 0/245 |
-| 8️⃣ | **Exam 06** | Miniserver. | ❌ | 0% | 0/4 |
+| 2️⃣ | **Exam 06** | Miniserver. | ❌ | 0% | 0/4 |
 
 ## 🏅 Achievements
 
