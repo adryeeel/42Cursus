@@ -43,7 +43,7 @@ Below is mine.
 ### 🟠 Rank 01
 
 | No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
-| --- | --- | --- | :---: | :---: | :---: |
+| :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **[libft](https://github.com/adryeeel/libft)** | A comprehensive C library containing a collection of custom implementations of standard functions from the C Standard Library. | ✅ | 125% | 45/70 |
 | 2️⃣ | **[ft_printf](https://github.com/adryeeel/ft_printf)** | Recoding the features of the standard C library printf function. | ✅ | 125% | 120/70 |
 | 3️⃣ | **[get_next_line](https://github.com/adryeeel/get_next_line)** | A function write in C that returns a line read from a file descriptor. | ✅ | 125% | 50/70 |
@@ -52,7 +52,7 @@ Below is mine.
 ### 🟡 Rank 02
 
 | No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
-| --- | --- | --- | :---: | :---: | :---: |
+| :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **[minitalk](https://github.com/adryeeel/minitalk)** | A minimalistic communication protocol implementation using UNIX signals and C. | ✅ | 125% | 43/50 |
 | 2️⃣ | **[push_swap](https://github.com/adryeeel/push_swap)** | Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions. | 🚧 | 0% | 0/60 |
 | 3️⃣ | **[so_long](https://github.com/adryeeel/so_long)** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | ❌ | 0% | 0/60 |
