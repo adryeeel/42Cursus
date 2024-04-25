@@ -24,7 +24,7 @@ Do you think you can handle this? 😉
 
 ## 🏊 Piscine
 
-_Piscine_ is a French term meaning "swimming pool" that refers to a intensive and immersive programming boot camp that serves as the entry point to 42 school course.
+_Piscine_ is a french term meaning "swimming pool" that refers to a intensive and immersive programming boot camp that serves as the entry point to 42 school course.
 
 During the piscine, prospective students, known as "pisciners", undergo a rigorous four to six-week evaluation period where they are introduced to the fundamentals of programming and problem-solving. The piscine is designed to identify individuals with the potential to excel in the field of computer science, regardless of their background or prior experience.
 
