@@ -66,18 +66,20 @@ Below is mine.
 | :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **Philosophers** | Exploring threading processes and mutual exclusion through the [dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem). | ❌ | 0% | 0/70 |
 | 2️⃣ | **Minishell** | A minimalistic bash implementation. | ❌ | 0% | 0/210 |
-| 4️⃣ | **Exam** | Recoding `get_next_line` or `ft_printf`. | ❌ | 0% | 0/3 |
+| 3️⃣ | **Exam** | Recoding `get_next_line` or `ft_printf`. | ❌ | 0% | 0/3 |
 
 ### 🔵 Rank 04
 
+| No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
+| :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **Netpractice** | Discovering networking and system administration. | ❌ | 0% | 0/50 |
 | 2️⃣ | **Cub3D** | Diving into the world of 3D game development, implementing ray-casting in the style of the famous [Wolfenstein 3D](https://en.wikipedia.org/wiki/Wolfenstein_3D) game. | ❌ | 0% | 0/280 |
-| 2️⃣ | **CPP Module 00** | Understanding OOP and the specifities of the C++ language when compared to C. | ❌ | 0% | 0/22 |
-| 2️⃣ | **CPP Module 01** | Memory allocation, reference, pointers to members and the usage of the `switch` in C++. | ❌ | 0% | 0/12 |
-| 2️⃣ | **CPP Module 02** | Understanding [Ad-hoc polymorphism](https://en.wikipedia.org/wiki/Ad_hoc_polymorphism), overloads and orthodox canonical classes in C++.  | ❌ | 0% | 0/12 |
-| 2️⃣ | **CPP Module 03** | Understanding inheritance in C++. | ❌ | 0% | 0/12 |
-| 2️⃣ | **CPP Module 04** | Uderstanding subtypes polymorphism, abstract classes and interfaces in C++. | ❌ | 0% | 0/12 |
-| 4️⃣ | **Exam** | Microshell. | ❌ | 0% | 0/3 |
+| 3️⃣ | **C++ 00** | Understanding OOP and the specifities of the C++ language when compared to C. | ❌ | 0% | 0/22 |
+| 4️⃣ | **C++ 01** | Memory allocation, reference, pointers to members and the usage of the `switch` in C++. | ❌ | 0% | 0/12 |
+| 5️⃣ | **C++ 02** | Understanding [Ad-hoc polymorphism](https://en.wikipedia.org/wiki/Ad_hoc_polymorphism), overloads and orthodox canonical classes in C++.  | ❌ | 0% | 0/12 |
+| 6️⃣ | **C++ 03** | Understanding inheritance in C++. | ❌ | 0% | 0/12 |
+| 7️⃣ | **C++ 04** | Uderstanding subtypes polymorphism, abstract classes and interfaces in C++. | ❌ | 0% | 0/12 |
+| 8️⃣ | **Exam** | Microshell. | ❌ | 0% | 0/3 |
 
 ### 🔴 Rank 05
 
