@@ -58,7 +58,7 @@ Below is mine.
 | 1️⃣ | **[minitalk](https://github.com/adryeeel/minitalk)** | A minimalistic communication protocol implementation using UNIX signals and C. | ✅ | 125% | 43/50 |
 | 2️⃣ | **[push_swap](https://github.com/adryeeel/push_swap)** | Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions. | 🚧 | 0% | 0/60 |
 | 3️⃣ | **so_long** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | ❌ | 0% | 0/60 |
-| 4️⃣ | **Exam** | 4 piscine questions. | ❌ | 0% | 0/3 |
+| 4️⃣ | **Exam 02** | 4 piscine questions. | ❌ | 0% | 0/4 |
 
 ### 🟢 Rank 03
 
@@ -66,7 +66,7 @@ Below is mine.
 | :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **Philosophers** | Exploring threading processes and mutual exclusion through the [dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem). | ❌ | 0% | 0/70 |
 | 2️⃣ | **Minishell** | A minimalistic bash implementation. | ❌ | 0% | 0/210 |
-| 3️⃣ | **Exam** | Recoding `get_next_line` or `ft_printf`. | ❌ | 0% | 0/3 |
+| 3️⃣ | **Exam 03** | Recoding `get_next_line` or `ft_printf`. | ❌ | 0% | 0/4 |
 
 ### 🔵 Rank 04
 
@@ -79,11 +79,27 @@ Below is mine.
 | 5️⃣ | **C++ 02** | Understanding [Ad-hoc polymorphism](https://en.wikipedia.org/wiki/Ad_hoc_polymorphism), overloads and orthodox canonical classes in C++.  | ❌ | 0% | 0/12 |
 | 6️⃣ | **C++ 03** | Understanding inheritance in C++. | ❌ | 0% | 0/12 |
 | 7️⃣ | **C++ 04** | Uderstanding subtypes polymorphism, abstract classes and interfaces in C++. | ❌ | 0% | 0/12 |
-| 8️⃣ | **Exam** | Microshell. | ❌ | 0% | 0/3 |
+| 8️⃣ | **Exam 04** | Microshell. | ❌ | 0% | 0/4 |
 
 ### 🔴 Rank 05
 
+| No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
+| :---: | --- | --- | :---: | :---: | :---: |
+| 1️⃣ | **C++ 05** | Understanding try/catch and exceptions in C++. | ❌ | 0% | 0/25 |
+| 2️⃣ | **C++ 06** | Understanding the different casts in C++. | ❌ | 0% | 0/25 |
+| 3️⃣ | **C++ 07** | Understanding templates in C++. | ❌ | 0% | 0/25 |
+| 4️⃣ | **C++ 08** | Understanding templated containers, iterators and algorithms in C++. | ❌ | 0% | 0/25 |
+| 5️⃣ | **C++ 09** | Understanding the containers in C++.  | ❌ | 0% | 0/40 |
+| 6️⃣ | **ft_irc** | Creating my own IRC server in C++, fully compatible with an official client. | ❌ | 0% | 0/175 |
+| 7️⃣ | **Inception** | System administration by using [Docker](https://en.wikipedia.org/wiki/Docker_(software)). | ❌ | 0% | 0/210 |
+| 8️⃣ | **Exam 05** | 3 C++ Questions. | ❌ | 0% | 0/4 |
+
 ### 🟣 Rank 06
+
+| No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
+| :---: | --- | --- | :---: | :---: | :---: |
+| 1️⃣ | **ft_transcendence** | A multiplayer and AI pong game using web technologies. | ❌ | 0% | 0/245 |
+| 8️⃣ | **Exam 06** | Miniserver. | ❌ | 0% | 0/4 |
 
 ## 🏅 Achievements
 
