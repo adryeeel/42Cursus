@@ -67,4 +67,4 @@ Below is mine.
 
 ## 🏅 Achievements
 
-- 🍇 **Participation in Sogrape Hackathon**: Our team joined the Sogrape Hackathon and created an automated system for scrapping data and displaying it dynamically on web dashboard. The system serves as a centralized platform for Sogrape employees, making it easier for them to access both raw data and important metrics. It helps streamline the monitoring and analysis of online store prices.
+- 🍇 **Participation in Sogrape Hackathon**: I joined the Sogrape Hackathon where my team and I developed an automated data scraping system integrated with a dynamic web dashboard. This system acts as a centralized platform for Sogrape employees, facilitating the monitoring and analysis of their products on national and international online stores. It provides easy access to both raw data and essential metrics, streamlining their workflow.
