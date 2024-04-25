@@ -57,10 +57,17 @@ Below is mine.
 | :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **[minitalk](https://github.com/adryeeel/minitalk)** | A minimalistic communication protocol implementation using UNIX signals and C. | ✅ | 125% | 43/50 |
 | 2️⃣ | **[push_swap](https://github.com/adryeeel/push_swap)** | Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions. | 🚧 | 0% | 0/60 |
-| 3️⃣ | **[so_long](https://github.com/adryeeel/so_long)** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | ❌ | 0% | 0/60 |
+| 3️⃣ | **so_long** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | ❌ | 0% | 0/60 |
 | 4️⃣ | **Exam** | 4 piscine questions. | ❌ | 0% | 0/3 |
 
 ### 🟢 Rank 03
+
+| No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
+| :---: | --- | --- | :---: | :---: | :---: |
+| 1️⃣ | **philosophers** | Exploring threading processes and mutual exclusion through the dining philosophers problem. | ❌ | 0% | 0/70 |
+| 2️⃣ | **minishell** | A minimalistic bash implementation. | ❌ | 0% | 0/210 |
+| 3️⃣ | **netpractice** | Discovering networking and system administration. | ❌ | 0% | 0/50 |
+| 4️⃣ | **Exam** | Recoding `get_next_line` or `ft_printf`. | ❌ | 0% | 0/3 |
 
 ### 🔵 Rank 04
 
