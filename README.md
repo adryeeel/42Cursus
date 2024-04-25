@@ -64,7 +64,7 @@ Below is mine.
 
 | No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
 | :---: | --- | --- | :---: | :---: | :---: |
-| 1️⃣ | **philosophers** | Exploring threading processes and mutual exclusion through the dining philosophers problem. | ❌ | 0% | 0/70 |
+| 1️⃣ | **philosophers** | Exploring threading processes and mutual exclusion through the [dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem). | ❌ | 0% | 0/70 |
 | 2️⃣ | **minishell** | A minimalistic bash implementation. | ❌ | 0% | 0/210 |
 | 3️⃣ | **netpractice** | Discovering networking and system administration. | ❌ | 0% | 0/50 |
 | 4️⃣ | **Exam** | Recoding `get_next_line` or `ft_printf`. | ❌ | 0% | 0/3 |
