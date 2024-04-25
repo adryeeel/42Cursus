@@ -34,7 +34,9 @@ I have a very special repository where I documented all my experience and perfom
 
 ## Common core
 
-The 42 common core features a ranked-based system that tailors project difficulty to your skill level.
+The common core, following the piscine, marks the official entry into the realm of a 42 student. With an average duration of 18 months, this program serves as a comprehensive immersion into the foundational principles of programming and computer science. Using C and C++ languages, each student will be equipped with a profound understanding of the core concepts, essential for their journey ahead as software developer.
+
+The 42 common core features a ranked-based system. By developing projects, winning XP, achievements and unlocking new challenges, you level up and the student's experience feels like a game.
 
 As you progress through the curriculum and achieve higher ranks, you'll tackle projects specifically crafted to challenge and expand your abilities. This dynamic approach ensures that each project is finely tuned to improve your current expertise, providing an optimized learning experience at every stage of the student's journey.
 
