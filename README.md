@@ -56,8 +56,8 @@ Below is mine.
 | No. | 📃 Project | 🖊️ Description | 🚀 Status | 🏆 Score | ⌛ Hours |
 | :---: | --- | --- | :---: | :---: | :---: |
 | 1️⃣ | **[minitalk](https://github.com/adryeeel/minitalk)** | A minimalistic communication protocol implementation using UNIX signals and C. | ✅ | 125% | 43/50 |
-| 2️⃣ | **[push_swap](https://github.com/adryeeel/push_swap)** | Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions. | ✅ | TBD | 62/60 |
-| 3️⃣ | **[so_long](https://github.com/adryeeel/so_long)** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | 🚧 | 0% | 23/60 |
+| 2️⃣ | **[push_swap](https://github.com/adryeeel/push_swap)** | Sorting data on a stack, with a limited set of instructions, using the lowest possible number of actions. | ✅ | 115% | 80/60 |
+| 3️⃣ | **[so_long](https://github.com/adryeeel/so_long)** | Textures, sprites, and some other basic gameplay elements of a 2D C game. | 🚧 | 0% | 70/60 |
 | 4️⃣ | **Exam 02** | 4 piscine questions. | ❌ | 0% | 0/4 |
 
 ### 🟢 Rank 03
